@@ -1,8 +1,30 @@
-<form action="/chat" method="POST">
-    <input type="text" name="message" placeholder="Enter your message">
-    <button type="submit">Send</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
 
-{% if response %}
-<p id="text">{{ response }}</p>
-{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>haiku-ai</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+  <!-- Link to your stylesheet here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ajusa/lit@latest/dist/lit.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+</head>
+
+<body class="m0">
+  <div class="c">
+    <h1>Haiku AI</h1>
+    <h3>Input a topic in the box and press submit.</h3>
+    <form action="/chat" method="POST">
+      <input class="card w-80" type="text" name="message" placeholder="Enter your message">
+      <button class="btn" type="submit">Submit</button>
+    </form>
+    {% if response %}
+    <p id="text">{{ response }}</p>
+    {% endif %}
+  </div>
+</body>
+
+</html>
