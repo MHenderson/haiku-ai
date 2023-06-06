@@ -15,14 +15,26 @@
 
 <body class="m0">
   <div class="c">
-    <h1>Haiku AI</h1>
-    <h3>Input a topic in the box and press submit.</h3>
-    <form action="/chat" method="POST">
-      <input class="card w-80" type="text" name="message" placeholder="Enter your message">
-      <button class="btn" type="submit">Submit</button>
-    </form>
+    <div class="row">
+        <div class="2 col"></div>
+        <div class="8 col">
+          <h1>Haiku AI</h1>
+          <h3>Input a topic in the box and press submit.</h3>
+          <form action="/chat" method="POST">
+            <input class="card w-80" type="text" name="message" placeholder="Enter your message">
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="2 col"></div>
+    </div>
     {% if response %}
-    <p id="text">{{ response }}</p>
+    <div class="row">
+        <div class="4 col"></div>
+        <div class="4 col">
+          {{ response|safe }}
+        </div>
+        <div class="4 col"></div>
+    </div>
     {% endif %}
   </div>
 </body>
