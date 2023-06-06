@@ -1,0 +1,18 @@
+topic: pond
+haiku: old pond - frog leaps in - water's sound
+##
+topic: monkey
+haiku: the first cold shower - even the monkey seems to want - a little coat of straw
+##
+topic: banana
+haiku: a yellow treat - brightening my day - sweet banana bliss
+##
+topic: contact lenses
+haiku: tiny windows - invisible to all - clear sight in my eyes
+##
+topic: batman
+haiku: dark knight's cape - soaring the city night - saving the helpless ones
+##
+topic: william wallace
+haiku: Braveheart with courage - Scotland's hero of truth - William Wallace stands tall
+##

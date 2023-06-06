@@ -5,7 +5,8 @@ from flask import Flask, render_template, request
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-prompt_history="topic: pond\nhaiku: old pond. frog leaps in. water's sound.\n##\ntopic: monkey\nhaiku: the first cold shower. even the monkey seems to want. a little coat of straw.\n##\ntopic: banana\nhaiku: a yellow treat, brightening my day. sweet banana bliss.\n##\ntopic: contact lenses\nhaiku: tiny windows, invisible to all. clear sight in my eyes.\n##\ntopic: batman\nhaiku:  dark knight's cape, soaring the city night. saving the helpless ones.\n##\ntopic: william wallace\nhaiku:  Braveheart with courage, Scotland's hero of truth. William Wallace stands tall.\n##\n"
+with open('prompt_history.txt', 'r') as file:
+    prompt_history = file.read()
 
 def get_response(prompt_history, new_topic):
   response = openai.Completion.create(
